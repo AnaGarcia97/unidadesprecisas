@@ -1,30 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spin Wheel</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <title>Unidades Precisas</title>
+    <meta name="description" content="HTML tutorial">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Unidades Precisas">
+    <meta http-equiv="refresh" content="30">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"href="style.css">
+   
+
+</head>   
+
+
 <body>
-  <div class="container">
-    <div class="pointer"></div>
-    <div class="one"><img src="Problemas.png" width="85" height="85"></div>
-    <div class="two"><img src="Conversao.png" width="85" height="85"></div>
-    <div class="three"><img src="Problemas.png" width="85" height="85"></div>
-    <div class="four"><img src="Conversao.png" width="85" height="85"></div>
-    <div class="five"><img src="Curiosidades.png" width="85" height="85"></div>
-    <div class="six"><img src="Multi-escolha.png" width="85" height="85"></div>
-    <div class="seven"><img src="perde tudo.png" width="85" height="85"></div>
-    <div class="eight"><img src="Curiosidades.png" width="85" height="85"></div>
-    <div class="nine"><img src="Problemas.png" width="85" height="85"></div>
-    <div class="ten"><img src="Curiosidades.png" width="85" height="85"></div>
-    <div class="eleven"><img src="Conversao.png" width="85" height="85"></div>
-    <div class="twelve"><img src="Multi-escolha.png" width="85" height="85"></div>
+    <header>  
+
+        <!--cronómetro-->
+        <br>
+     <h1><b>Medidas Precisas </b></h1>
+     <p> Preciona o botão iniciar para começar, não te esqueças que só tens 5 minutos para cada pergunta</p>
+  <div id="cronometro">00:00:00</div>
+  <button onclick="start()">Iniciar</button>
+  <button onclick="pause()">Pausa</button>
+  <button onclick="reset()">Reiniciar</button> </p>
+        
+        <hr>
+
+    </header>
+    
+<nav id="tabletPC" class="col-3">
+    
+</nav>
+
+<br>
+
+
+
+
+<!--separador 1-->
+<section> 
+    <h2> Roleta do jogo Medidas Precisas </h2>
+
+    <div class="container">
+        <div class="pointer"></div>
+        <div class="one"><img src="Problemas.png" width="85" height="85"></div>
+        <div class="two"><img src="Conversao.png" width="85" height="85"></div>
+        <div class="three"><img src="Problemas.png" width="85" height="85"></div>
+        <div class="four"><img src="Conversao.png" width="85" height="85"></div>
+        <div class="five"><img src="Curiosidades.png" width="85" height="85"></div>
+        <div class="six"><img src="Multi-escolha.png" width="85" height="85"></div>
+        <div class="seven"><img src="perde tudo.png" width="85" height="85"></div>
+        <div class="eight"><img src="Curiosidades.png" width="85" height="85"></div>
+        <div class="nine"><img src="Problemas.png" width="85" height="85"></div>
+        <div class="ten"><img src="Curiosidades.png" width="85" height="85"></div>
+        <div class="eleven"><img src="Conversao.png" width="85" height="85"></div>
+        <div class="twelve"><img src="Multi-escolha.png" width="85" height="85"></div>
+        
+
+      </div>
+     
+      <button id="spin"><i class="arrow"></i>Girar</button>
+    
   
-  </div>
- 
-  <button id="spin"><i class="arrow"></i>Spin</button>
-  <script src="script.js"></script>
+
+
+</section>
+
+<br>
+
+</div>
+
+<br>
+
+<footer>
+    <h2>
+        
+        <p> 
+        Developed by Ana Filipa Garcia; Madalena Santos Lima; Mariana David
+        <br>
+        </p>
+
+        <p>
+        2022/2023
+        </p>
+
+</h2>
+</footer>
+
+
+<!--<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i = null;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
+        for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+
+
+
+
+    let menu_icon = document.querySelector('#menu_icon');
+    let container = document.querySelector("#container");
+    let drawer = document.querySelector('#drawer');
+
+    menu_icon.addEventListener('click', function (e) {
+
+    drawer.classList.toggle('open');
+    e.stopPropagation();
+});
+    container.addEventListener('click', function () {
+    drawer.classList.remove('open');
+});
+
+</script>-->
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
