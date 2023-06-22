@@ -40,8 +40,6 @@ function reset() {
 function formatTime(time) {
   return time < 10 ? "0" + time : time; }
 
-
-
   /*Roleta*/
 let container = document.querySelector(".container");
 let btn = document.getElementById("spin");
@@ -56,3 +54,5 @@ btn.onclick = function () {
   pointer.style.transform = "rotate(" + rotationAngle + "deg)";
   score += number;
   scoreElement.textContent = score;}
+
+
